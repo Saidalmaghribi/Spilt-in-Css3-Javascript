@@ -2,7 +2,7 @@
 Awesome split using CSS3 and Javascript
 ##crate an awesome split using Javascript and CSS
 ** index.html**
-``<!DOCTYPE html>
+```<!DOCTYPE html>
 <html>
 <head>
 	<title>Awsome split Using css3 && javascript</title>
@@ -47,3 +47,4 @@ Awesome split using CSS3 and Javascript
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
+```
