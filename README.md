@@ -53,4 +53,100 @@ Awesome split using CSS3 and Javascript
 **style.css**
 
 ```
+body{
+	margin:0;
+	padding: 0;
+	font-size: 100%;
+	line-height: 1.6;
+	font-family: Arial halvetica,sans-serif;
+}
+#wrapper{
+	position: relative;
+	width: 100%;
+	height: 55vw;
+	min-height: 55vw;
+	overflow: hidden;
+
+}
+.layer{
+	position: absolute;
+	width: 100vw;
+	min-height: 55vw;
+	overflow: hidden;
+}
+.layer .wrapper-content{
+	position: absolute;
+	width: 100vw;
+	min-height: 55vw;
+}
+.layer .wrapper-body{
+	width: 25%;
+	top: 50%;
+	position: absolute;
+	text-align: center;
+	transform: translateY(-50%);
+	color:#fff;
+}
+.layer img{
+	position: absolute;
+	width: 35%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.layer h1{
+	font-size: 2em;
+}
+.bottom{
+	background: #222;
+	z-index: 1;
+
+}
+.bottom .wrapper-body{
+	right: 5%;
+}
+.bottom h1{
+	color: #FDAB00;
+}
+.top{
+	width: 50vw;
+	background: #eee;
+	color: #222;
+	z-index: 2;
+}
+.top .wrapper-body{
+	left: 5%;
+	color: #222;
+}
+.handle{
+	position: absolute;
+	height: 100%;
+	left: 50%;
+	top: 0;
+	background: #FDAB00;
+	width: 5px;
+	z-index: 3;
+	bottom: 0;
+	display: block;
+}
+.skwed .handle{
+	top: 50%;
+	transform: rotate(30deg) translateY(-50%);
+	height: 200%;
+	transform-origin: top;
+}
+.skwed .top{
+	transform: skew(-30deg);
+	margin-left: -1000px;
+	width: calc(50vw + 1000px);
+}
+.skwed .top .wrapper-content{
+	transform:skew(30deg);
+	margin-left: 1000px;
+}
+@media(max-width: 768px){
+	body{
+		font-size: 75%;
+	}
+}
 ```
